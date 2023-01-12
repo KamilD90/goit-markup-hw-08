@@ -1,0 +1,40 @@
+.customers{
+    &__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $brand-black;
+    }
+  
+    &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     }
+  
+    &__link {
+    align-items: center;
+    justify-content: center;
+    padding: 13px 29px;
+    border-radius: 4px;
+    fill: $brand-3rd-grey;
+    border: 1px solid $brand-3rd-grey;
+    transition-property: border, fill; 
+    transition-duration: $transitionDurationDeafault;
+    transition-timing-function: $tarnsitionTimingDefault;
+    
+  
+      &:hover,
+      &:focus,
+      &:hover > .customer__logo,
+      &:focus > .customer__logo {
+        border-color: $brand-light-navy;
+        outline: none;
+        fill: $brand-light-navy;
+    }
+    }
+}
+  

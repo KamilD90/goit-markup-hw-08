@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/modern-normalize.min.css" />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header ">
+      <div class="container header__flex-box">
+        <div class="header__wrapper">
+          <a href="index.html" class="logo header__logo "
+            >Web<span class="logo__studio--black">Studio</span></a
+          >
+                <!------NAVIGATE BLOCK START ------->
+                <nav class="header__navigate">
+                  <ul class="header__navigate-list">
+                    <li>
+                      <a href="index.html" class="header__navigate-link header__navigate-link--unactive"
+                        >Agencja</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="portfolio.html"
+                        class="header__navigate-link header__navigate-link--active"
+                        >Portfolio</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="header__navigate-link header__navigate-link--unactive"
+                        >Kontakt</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+          
+              </div>
+              <div class="header__contact">
+                <a href="mailto:info@devstudio.com" class="header__contact-link">
+                  <svg width="16px" height="12px" class="header__contact-icon">
+                    <use href="images/icons.svg#icon-envelope"></use>
+                  </svg>
+        
+                  info@devstudio.com</a
+                >
+                <a href="tel:+48111111111" class="header__contact-link">
+                  <svg width="10px" height="16px" class="header__contact-icon">
+                    <use href="images/icons.svg#icon-smartphone"></use>
+                  </svg>
+        
+                  +48 111 111 111</a
+                >
+              </div>
+             
+      </div>
+          </header>
+           <!-- -----HEADER BLOCK END---- -->
+    <main>
+      <section class="section filters">
+        <div class="filters__body">
+          <ul class="filters__list">
+            <li class="filters__item">
+              <button class="filters__button" type="button">Wszystkie</button>
+            </li>
+            <li>
+              <button class="filters__button" type="button">Strony</button>
+            </li>
+            <li>
+              <button class="filters__button" type="button">Aplikacje</button>
+            </li>
+            <li>
+              <button class="filters__button" type="button">Dizajn</button>
+            </li>
+            <li>
+              <button class="filters__button" type="button">Marketing</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section category">
+        <div class="container">
+          <ul class="category__list">
+            <li class="category__item">
+              <figure class="category__card" tabindex="0">
+                <div class="category__body">
+                  <img
+                    class="category__img"
+                    src="images/portfolio/technocrack.jpg"
+                    alt="podgląd strony internetowej z widżetami 3 osób"
+                    width="370"
+                    height="294"
+                  />
+
+                  <p class="category__description">
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji
+                  </p>
+                </div>
+                <figcaption class="category__footer">
+                  <span class="category__subtitle">Technocrack </span>
+                  Strona internetowa
+                </figcaption>
+              </figure>
+            </li>
+            <li class="category__item">
+              <figure class="category__card" tabindex="0">
+                <div class="category__body">
+                  <img
+                    class="category__img"
+                    src="images/portfolio/grafika-novsgs.jpg"
+                    alt="dwóch koszykarzy walczy o piłkę"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="category__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum minima odio itaque autem voluptatibus vitae, facilis
+                    veniam consequuntur dolor perspiciatis laboriosam hic
+                    necessitatibus
+                  </p>
+                </div>
+                <figcaption class="category__footer">
+                  <span class="category__subtitle"
+                    >Grafika New Orlean vs Golden Star
+                  </span>
+                  Dizajn
+                </figcaption>
+              </figure>
+            </li>
+            <li class="category__item">
+              <figure class="category__card" tabindex="0">
+                <div class="category__body">
+                  <img
+                    class="category__img"
+                    src="images/portfolio/restauracja-seafood.jpg"
+                    alt="logo restauracji"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="category__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum minima odio itaque autem voluptatibus vitae, facilis
+                    veniam consequuntur dolor perspiciatis laboriosam hic
+                    necessitatibus
+                  </p>
+                </div>
+                <figcaption class="category__footer">
+                  <span class="category__subtitle">Restauracja Seafood </span>
+                  Aplikacja
+                </figcaption>
+              </figure>
+            </li>
+            <li class="category__item">
+              <figure class="category__card" tabindex="0">
+                <div class="category__body">
+                  <img
+                    class="category__img"
+                    src="images/portfolio/projekt-prime.jpg"
+                    alt="słuchawki nauszne"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="category__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum minima odio itaque autem voluptatibus vitae, facilis
+                    veniam consequuntur dolor perspiciatis laboriosam hic
+                    necessitatibus
+                  </p>
+                </div>
+                <figcaption class="category__footer">
+                  <span class="category__subtitle">Projekt Prime </span>
+                  Marketing
+                </figcaption>
+              </figure>
+            </li>
+            <li class="category__item">
+              <figure class="category__card" tabindex="0">
+                <div class="category__body">
+                  <img
+                    class="category__img"
+                    src="images/portfolio/projekt-boxes.jpg"
+                    alt="dwie propozycje opakowań produktu"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="category__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum minima odio itaque autem voluptatibus vitae, facilis
+                    veniam consequuntur dolor perspiciatis laboriosam hic
+                    necessitatibus
+                  </p>
+                </div>
+                <figcaption class="category__footer">
+                  <span class="category__subtitle">Projekt Boxes </span
+                  >Aplikacja
+                </figcaption>
+              </figure>
+            </li>
+            <li class="category__item">
+              <figure class="category__card" tabindex="0">
+                <div class="category__body">
+                  <img
+                    class="category__img"
+                    src="images/portfolio/inspiration-hnb.jpg"
+                    alt="ekran wyświwetla Strone   internetową z punktami na mapie świata"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="category__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum minima odio itaque autem voluptatibus vitae, facilis
+                    veniam consequuntur dolor perspiciatis laboriosam hic
+                    necessitatibus
+                  </p>
+                </div>
+                <figcaption class="category__footer">
+                  <span class="category__subtitle"
+                    >Inspiration has no Borders </span
+                  >Strona inernetowa
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="category__item">
+              <figure class="category__card" tabindex="0">
+                <div class="category__body">
+                  <img
+                    class="category__img"
+                    src="images/portfolio/magazyn-le.jpg"
+                    alt="Magazyn otwarty na artykule :Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="category__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum minima odio itaque autem voluptatibus vitae, facilis
+                    veniam consequuntur dolor perspiciatis laboriosam hic
+                    necessitatibus
+                  </p>
+                </div>
+                <figcaption class="category__footer">
+                  <span class="category__subtitle"
+                    >Magazyn Limited Edition </span
+                  >Dizajn
+                </figcaption>
+              </figure>
+            </li>
+            <li class="category__item">
+              <figure class="category__card" tabindex="0">
+                <div class="category__body">
+                  <img
+                    class="category__img"
+                    src="images/portfolio/projekt-lab.jpg"
+                    alt="Zbliżenie etykiety produktu"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="category__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum minima odio itaque autem voluptatibus vitae, facilis
+                    veniam consequuntur dolor perspiciatis laboriosam hic
+                    necessitatibus
+                  </p>
+                </div>
+                <figcaption class="category__footer">
+                  <span class="category__subtitle">Projekt LAB </span>Marketing
+                </figcaption>
+              </figure>
+            </li>
+            <li class="category__item">
+              <figure class="category__card" tabindex="0">
+                <div class="category__body">
+                  <img
+                    class="category__img"
+                    src="images/portfolio/growing-business.jpg"
+                    alt="człowiek pracujący na laptopie"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="category__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum minima odio itaque autem voluptatibus vitae, facilis
+                    veniam consequuntur dolor perspiciatis laboriosam hic
+                    necessitatibus
+                  </p>
+                </div>
+                <figcaption class="category__footer">
+                  <span class="category__subtitle">Growing business </span
+                  >Aplikacja
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__box">
+          <a href="index.html" class="logo footer__logo"
+            >Web<span class="logo__studio--white">Studio</span></a
+          >
+          <address class="footer__address">
+            <ul class="footer__address-list">
+              <li>
+                <a href="#" class="footer__address-link  footer__address-link--white"
+                  >m. Warszawa, Aleje Jerozolimskie 21</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="footer__address-link footer__address-link--underline "
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+48111111111" class="footer__address-link "
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__sm-box">
+          <h3 class="footer__sm-box-title">DOŁĄCZ DO NAS</h3>
+          <div class="social-media footer__social-media-flex">
+            <a
+              class="social-media__link footer__social-media--background"
+              href="#"
+            >
+              <svg width="20px" height="20px" class="social-media__icon footer__social-media-icon--white">
+                <use href="images/icons.svg#icon-instagram-2"></use></svg
+            ></a>
+            <a
+              class="social-media__link footer__social-media--background"
+              href="#"
+            >
+              <svg width="20px" height="20px" class="social-media__icon footer__social-media-icon--white">
+                <use href="images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+            <a
+              class="social-media__link footer__social-media--background"
+              href="#"
+            >
+              <svg width="20px" height="20px" class="social-media__icon footer__social-media-icon--white">
+                <use href="images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+            <a
+              class="social-media__link footer__social-media--background"
+              href="#"
+            >
+              <svg width="20px" height="20px" class="social-media__icon footer__social-media-icon--white">
+                <use href="images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__newsletter">
+          <h2 class="footer__newsletter-title">ZAPISZ SIĘ DO NEWSLETTERA</h2>
+          <div class="footer__newsletter-wrapper">
+            <input
+              class="footer__newsletter-input"
+              type="email"
+              name="newsletter-email"
+              placeholder="E-mail"
+            />
+            <button class="footer__newsletter-submit-btn" type="submit">
+              Zapisz się
+              <svg width="24px" height="24px" class="footer__newsletter-icon">
+                <use href="images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
