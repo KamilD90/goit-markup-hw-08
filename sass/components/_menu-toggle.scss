@@ -1,0 +1,8 @@
+.menu-toggle {
+  border: none;
+  background-color: inherit;
+
+  @include tablet {
+    display: none;
+  }
+}

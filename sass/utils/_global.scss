@@ -1,27 +1,42 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 768px;
   }
-  
-  .container {
+
+  @include desktop {
     max-width: 1200px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
   }
-  
-  .section {
+}
+
+.section {
+  padding: 60px 0;
+  margin: 0 auto;
+
+  @include desktop {
     padding: 94px 0;
-    margin: 0 auto;
   }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
+}
 
-  ul{
-    list-style-type: none;
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
+ul {
+  list-style-type: none;
+}
 
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

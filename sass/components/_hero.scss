@@ -1,48 +1,100 @@
 .hero {
-    text-align: center;
-    color: $brand-white;
-    background-color: $brand-light-black;
+  max-height: 400px;
+  color: $brand-white;
+  background-color: $brand-light-black;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/Hero-mob@1x.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include tablet {
     background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/team-work.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    &__slogan{
-         padding: 106px 237px 0px 237px;
-        margin: 0;
-        margin-bottom: 30px;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
+      url('../images/Hero-tab@1x.jpg');
+  }
+
+  @include desktop {
+    max-height: 600px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/Hero-desk@1x.jpg');
+  }
+
+  &__wrapper {
+    padding: 58px 0;
+    text-align: center;
+    @include desktop {
+      padding: 106px 235px;
     }
   }
 
-  .box {
-    width: 480px;
-    height: 320px;
-    background-image: url('photo.png');
-    background-size: 480px 320px;
-  }
-  
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .box {
-      background-image: url('photo@2x.png');
+  &__slogan {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    font-family: 'Roboto';
+    font-size: 26px;
+    line-height: 1.62;
+    text-transform: uppercase;
+    color: $brand-white;
+
+    @include desktop {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
     }
   }
+}
 
-  <div class="container">
-  <div class="thumb">
-    <picture>
-      <source srcset="https://picsum.photos/id/237/400/600 400w, https://picsum.photos/id/237/800/1200 800w" media="(max-width: 600px)" sizes="(min-width: 480px) 480px, 100vw">
-      <source srcset="https://picsum.photos/id/237/800/400 800w, https://picsum.photos/id/237/1600/800 1600w" media="(min-width: 601px)" sizes="(min-width: 800px) 800px, 100vw">
-      <img src="https://picsum.photos/id/237/300/200" alt="Cute puppy">
-    </picture>
-  </div>
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/Hero-mob@2x.jpg');
+
+    @include tablet {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/Hero-tab@2x.jpg');
+    }
+
+    @include desktop {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/Hero-desk@2x.jpg');
+    }
+  }
+}
+
+// <div class="container">
+// <div class="thumb">
+//   <picture>
+//     <source srcset="https://picsum.photos/id/237/400/600 400w, https://picsum.photos/id/237/800/1200 800w" media="(max-width: 600px)" sizes="(min-width: 480px) 480px, 100vw">
+//     <source srcset="https://picsum.photos/id/237/800/400 800w, https://picsum.photos/id/237/1600/800 1600w" media="(min-width: 601px)" sizes="(min-width: 800px) 800px, 100vw">
+//     <img src="https://picsum.photos/id/237/300/200" alt="Cute puppy">
+//   </picture>
+// </div>

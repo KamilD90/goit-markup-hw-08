@@ -1,113 +1,131 @@
-
 .header {
-  justify-content: space-between;
+  padding: 16px 0;
   border-bottom: 1px solid #ececec;
 
-  &__flex-box{
-    display:flex;
+  @include tablet {
+    padding: 21px 0;
+  }
+
+  @include desktop {
+    padding: 24px 0;
+  }
+
+  &__flex-box {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
   }
 
-  &__logo{
-    margin: 24px 0;
-    margin-right: 93px;
+  &__logo {
+    @include tablet {
+      margin-right: 83px;
+    }
+    @include desktop {
+      margin-right: 93px;
+    }
   }
-  
-  &__navigate{
+
+  &__navigate {
+    display: none;
+
+    @include tablet {
       display: flex;
       align-items: center;
-      
+    }
   }
-  
-  &__navigate-list{display: flex;
-  gap: 46px;}
-  
-  &__navigate-link{
-      position: relative;
-      align-items: center;
-      color: $brand-almost-black;
-      font-weight: 500;
-      font-size: 14px;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      transition-property: color;
+
+  &__navigate-list {
+    display: flex;
+    gap: 46px;
+  }
+
+  &__navigate-link {
+    position: relative;
+    align-items: center;
+    color: $brand-almost-black;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: $transitionDurationDeafault;
+    transition-timing-function: $tarnsitionTimingDefault;
+
+    &:focus,
+    &:hover {
+      color: $brand-light-navy;
+    }
+
+    &--active {
+      color: $brand-light-navy;
+    }
+
+    &--active::after {
+      content: '';
+      display: block;
+      background-color: $brand-light-navy;
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      bottom: -32px;
+      border-radius: 2px;
+    }
+
+    &--unactive::after {
+      opacity: 0;
+      content: '';
+      display: block;
+      background-color: $brand-light-navy;
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      bottom: -32px;
+      border-radius: 2px;
+      transition-property: opacity;
       transition-duration: $transitionDurationDeafault;
       transition-timing-function: $tarnsitionTimingDefault;
-      
-      &:focus,
-      &:hover{
-          color: $brand-light-navy;
-      }
-      
-      &--active{
-          color: $brand-light-navy;
-      }
-      
-      &--active::after{
-          content: '';
-          display: block;
-          background-color: $brand-light-navy;
-          height: 4px;
-          width: 100%;
-          position: absolute;
-          bottom: -32px;
-          border-radius: 2px;
-      }
-      
-      &--unactive::after{
-          opacity: 0;
-          content: '';
-          display: block;
-          background-color: $brand-light-navy;
-          height: 4px;
-          width: 100%;
-          position: absolute;
-          bottom: -32px;
-          border-radius: 2px;
-          transition-property: opacity;
-          transition-duration: $transitionDurationDeafault;
-          transition-timing-function: $tarnsitionTimingDefault;
-      }
-      
-      &--unactive:hover::after,
-      &--unactive:focus::after{
-          opacity: 1;
-      }
+    }
+
+    &--unactive:hover::after,
+    &--unactive:focus::after {
+      opacity: 1;
+    }
   }
-  
-  &__contact{
+
+  &__contact {
+    display: none;
+
+    @include tablet {
       display: flex;
       align-items: center;
       gap: 30px;
       margin-right: 12px;
+    }
   }
-  
+
   &__contact-link {
-      display: flex;
-      align-items: center;
-      font-weight: 500;
-      font-size: 14px;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      color: $brand-light-grey;
-      fill: currentColor;
-      transition-property: color;
-      transition-duration: $transitionDurationDeafault;
-      transition-timing-function: $tarnsitionTimingDefault;
-      
-      &:focus,
-      &:hover{
-          color: $brand-light-navy;
-      }
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $brand-light-grey;
+    fill: currentColor;
+    transition-property: color;
+    transition-duration: $transitionDurationDeafault;
+    transition-timing-function: $tarnsitionTimingDefault;
+
+    &:focus,
+    &:hover {
+      color: $brand-light-navy;
+    }
   }
-  &__contact-icon{
+  &__contact-icon {
     margin-right: 10px;
   }
 }
-
-
-

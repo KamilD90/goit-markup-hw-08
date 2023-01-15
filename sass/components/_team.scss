@@ -1,29 +1,45 @@
 .team {
-    background-color: $brand-2nd-grey;
-  
-  
+  background-color: $brand-2nd-grey;
+
   &__title {
+    margin-bottom: 30px;
     font-weight: 700;
-    color: $brand-almost-black;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
-    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+    color: $brand-almost-black;
+
+    @include desktop {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
   }
-  
+
   &__list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
-  
+
   &__item {
+    text-align: center;
     background-color: $brand-white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  
+
+  &__picture {
+    margin-bottom: 30px;
+  }
+
   &__member-ocupation {
     margin-bottom: 16px;
     display: block;
@@ -31,19 +47,31 @@
     line-height: 1.17;
     text-align: center;
   }
-  
+
   &__member-name {
-    margin-top: 30px;
     margin-bottom: 10px;
     display: block;
-    align-items: center;
     font-weight: 500;
-    color: $brand-almost-black;
-    line-height: 1.17;
+    font-size: 16px;
+    line-height: 1.178;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    @include desktop {
+      font-weight: 500;
+      color: $brand-almost-black;
+      line-height: 1.17;
+    }
   }
 
-  &__social-media{
+  &__social-media {
     padding: 0px 32px 30px 32px;
   }
- }
-  
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .team__image {
+  }
+}

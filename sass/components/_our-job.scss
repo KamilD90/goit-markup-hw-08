@@ -1,11 +1,15 @@
 .our-job {
+  display: none;
+
+  @include desktop {
+    display: block;
     margin-top: -94px;
-  
-  
+  }
+
   &__image {
     vertical-align: middle;
   }
-  
+
   &__title {
     font-weight: 700;
     font-size: 36px;
@@ -13,18 +17,18 @@
     line-height: 1.17;
     text-align: center;
   }
-  
+
   &__list {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     gap: 30px;
   }
-  
+
   &__item {
     position: relative;
   }
-  
+
   &__image-name {
     position: absolute;
     width: 100%;
@@ -40,5 +44,4 @@
     color: $brand-white;
     background-color: rgba(47, 48, 58, 0.8);
   }
-  
- }
+}

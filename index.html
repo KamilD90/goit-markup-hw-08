@@ -19,16 +19,17 @@
   <body>
     <header class="header">
       <div class="container header__flex-box">
-       
         <div class="header__wrapper">
-          <a href="index.html" class="logo header__logo "
+          <a href="index.html" class="logo header__logo"
             >Web<span class="logo__studio--black">Studio</span></a
           >
           <!------NAVIGATE BLOCK START ------->
-          <nav class="header__navigate">
+          <nav class="header__navigate hide">
             <ul class="header__navigate-list">
               <li>
-                <a href="#" class="header__navigate-link header__navigate-link--active"
+                <a
+                  href="#"
+                  class="header__navigate-link header__navigate-link--active"
                   >Agencja</a
                 >
               </li>
@@ -40,49 +41,50 @@
                 >
               </li>
               <li>
-                <a href="#" class="header__navigate-link header__navigate-link--unactive"
+                <a
+                  href="#"
+                  class="header__navigate-link header__navigate-link--unactive"
                   >Kontakt</a
                 >
               </li>
             </ul>
           </nav>
-    
         </div>
-        <div class="header__contact">
+        <div class="header__contact hide">
           <a href="mailto:info@devstudio.com" class="header__contact-link">
             <svg width="16px" height="12px" class="header__contact-icon">
               <use href="images/icons.svg#icon-envelope"></use>
             </svg>
-  
+
             info@devstudio.com</a
           >
           <a href="tel:+48111111111" class="header__contact-link">
             <svg width="10px" height="16px" class="header__contact-icon">
               <use href="images/icons.svg#icon-smartphone"></use>
             </svg>
-  
+
             +48 111 111 111</a
           >
         </div>
         <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg
-          width="24"
-          height="24"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
         >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
       <!-- -----HEADER BLOCK END---- -->
     </header>
@@ -90,13 +92,15 @@
       <!-- ----------HERO BLOCK START----------- -->
       <section class="section hero">
         <div class="container">
-          <!--Header-->
-          <h1 class="hero__slogan">
-            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-          </h1>
-          <button type="button" class="hero__button" data-modal-open>
-            Zamów usługe
-          </button>
+          <div class="hero__wrapper">
+            <!--Header-->
+            <h1 class="hero__slogan">
+              EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+            </h1>
+            <button type="button" class="hero__button" data-modal-open>
+              Zamów usługe
+            </button>
+          </div>
         </div>
       </section>
       <!----------------HERO BLOCK END------------>
@@ -202,12 +206,24 @@
           <ul class="team__list">
             <li class="team__item">
               <figure class="team__card">
-                <img
-                  src="images/ourteam/product_designer.jpg"
-                  alt="mężczyzna w brązowej koszuli"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="screen and (max-width: 767px)"
+                    srcset="
+                      images/ourteam/p-d-mob@1x.jpg,
+                      images/ourteam/p-d-mob@2x.jpg 2x
+                    "
+                  />
+                  <source media="screen and (min-width: 767px)"" srcset="
+                  images/ourteam/p-d-tab@1x.jpg, images/ourteam/p-d-tab@2x.jpg
+                  2x " /> <source media="screen and (min-width: 1200px)""
+                  srcset=" images/ourteam/p-d-desk@1x.jpg,
+                  images/ourteam/p-d-desk@2x.jpg 2x " />
+                  <img
+                    src="images/ourteam/product-designer.jpg"
+                    alt="mężczyzna w brązowej koszuli"
+                  />
+                </picture>
                 <figcaption class="team__member-ocupation">
                   <span class="team__member-name">John Doe </span>Product
                   Designer
@@ -415,17 +431,19 @@
           <address class="footer__address">
             <ul class="footer__address-list">
               <li>
-                <a href="#" class="footer__address-link footer__address-link--white"
+                <a
+                  href="#"
+                  class="footer__address-link footer__address-link--white"
                   >m. Warszawa, Aleje Jerozolimskie 21</a
                 >
               </li>
               <li>
-                <a href="mailto:info@devstudio.com" class="footer__address-link "
+                <a href="mailto:info@devstudio.com" class="footer__address-link"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a href="tel:+48111111111" class="footer__address-link "
+                <a href="tel:+48111111111" class="footer__address-link"
                   >+48 111 111 111</a
                 >
               </li>
@@ -439,14 +457,22 @@
               class="social-media__link footer__social-media--background"
               href="#"
             >
-              <svg width="20px" height="20px" class="social-media__icon footer__social-media-icon--white">
+              <svg
+                width="20px"
+                height="20px"
+                class="social-media__icon footer__social-media-icon--white"
+              >
                 <use href="images/icons.svg#icon-instagram-2"></use></svg
             ></a>
             <a
               class="social-media__link footer__social-media--background"
               href="#"
             >
-              <svg width="20px" height="20px" class="social-media__icon footer__social-media-icon--white">
+              <svg
+                width="20px"
+                height="20px"
+                class="social-media__icon footer__social-media-icon--white"
+              >
                 <use href="images/icons.svg#icon-twitter-1"></use>
               </svg>
             </a>
@@ -454,7 +480,11 @@
               class="social-media__link footer__social-media--background"
               href="#"
             >
-              <svg width="20px" height="20px" class="social-media__icon footer__social-media-icon--white">
+              <svg
+                width="20px"
+                height="20px"
+                class="social-media__icon footer__social-media-icon--white"
+              >
                 <use href="images/icons.svg#icon-facebook-1"></use>
               </svg>
             </a>
@@ -462,7 +492,11 @@
               class="social-media__link footer__social-media--background"
               href="#"
             >
-              <svg width="20px" height="20px" class="social-media__icon footer__social-media-icon--white">
+              <svg
+                width="20px"
+                height="20px"
+                class="social-media__icon footer__social-media-icon--white"
+              >
                 <use href="images/icons.svg#icon-linkedin-1"></use>
               </svg>
             </a>
@@ -541,7 +575,11 @@
             ></textarea>
           </label>
           <label class="custom-checkbox">
-            <input type="checkbox" name="agreement" class="custom-checkbox__input" />
+            <input
+              type="checkbox"
+              name="agreement"
+              class="custom-checkbox__input"
+            />
             <svg width="11px" height="8px" class="custom-checkbox__icon">
               <use href="images/icons.svg#icon-Vector"></use>
             </svg>
@@ -558,12 +596,12 @@
       </div>
     </div>
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script defer src="js/mobile-menu.js"></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
