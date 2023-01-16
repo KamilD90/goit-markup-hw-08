@@ -36,7 +36,12 @@
     border-radius: 0px 0px 4px 4px;
   }
 
+  &__card {
+    margin-bottom: 1rem;
+  }
+
   &__picture {
+    display: block;
     margin-bottom: 30px;
   }
 
@@ -65,13 +70,6 @@
   }
 
   &__social-media {
-    padding: 0px 32px 30px 32px;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .team__image {
+    margin-bottom: 24px;
   }
 }

@@ -1,62 +1,58 @@
-.custom-checkbox{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    color:$brand-light-grey;
+.custom-checkbox {
+  position: relative;
+  display: flex;
+
+  // text-align: center;
+  // align-items: center;
+  justify-content: space around;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: $brand-light-grey;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $brand-almost-black;
+
+  &__input {
+    background: $brand-white;
+    margin: 0;
+    appearance: none;
+    border: 1.8px solid $brand-black;
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    // margin-right: 7px;
+    transition-property: background-color;
+    transition-duration: $transitionDurationDeafault;
+    transition-timing-function: $tarnsitionTimingDefault;
+
+    &[type='checkbox']:checked {
+      background-color: $brand-light-navy;
+      border-color: $brand-light-navy;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    fill: $brand-white;
+    top: 4px;
+    left: 0px;
+
+    @include desktop {
+      top: 7px;
+      left: 3px;
+    }
+  }
+
+  &__conditions {
+    color: $brand-light-grey;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: $brand-almost-black;
-  
-  &__input {
-        background: $brand-white;
-        margin: 0;
-        appearance: none;
-        border: 1.8px solid $brand-black;
-        border-radius: 2px;
-        width: 16px;
-        height: 15px;
-        margin-right: 7px;
-        transition-property: background-color; 
-        transition-duration: $transitionDurationDeafault;
-        transition-timing-function: $tarnsitionTimingDefault;
-  
-          &[type='checkbox']:checked {
-            background-color: $brand-light-navy;
-            border-color: $brand-light-navy;
-          }
-  
-          &[type='checkbox']:checked + .custom-checkbox__icon {
-              opacity: 1;
-          }
-      }
-  
-  
-  
-  &__icon {
-        position: absolute;
-        transform: translateX(30%);
-        left: 14px;
-        opacity: 0;
-        fill: $brand-white;
-        transition-property: opacity; 
-        transition-duration: $transitionDurationDeafault;
-        transition-timing-function: $tarnsitionTimingDefault;
-      
-      }
-  
-  &__conditions {
-        color: $brand-light-grey;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-      }
-  
-  &__link {
-        color: $brand-light-navy;
-        text-decoration-color: $brand-light-navy;
-      }
   }
+
+  &__link {
+    color: $brand-light-navy;
+    text-decoration-color: $brand-light-navy;
+  }
+}

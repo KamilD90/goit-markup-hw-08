@@ -1,17 +1,21 @@
-.logo{
-        color:$brand-light-navy;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        text-decoration: none;
-        line-height: 1.19;
-        letter-spacing: 0.03em; 
+.logo {
+ font-family: 'Raleway';
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 1.17;
+ letter-spacing: 0.03em;
+ color: $brand-light-navy;
+ text-decoration: none;
 
-        &__studio--white{
-            color:$brand-white;
-        }
+ @include desktop {
+  font-size: 26px;
+ }
 
-        &__studio--black{
-            color:$brand-black;
-        }
-      }
+ &__studio--white {
+  color: $brand-white;
+ }
+
+ &__studio--black {
+  color: $brand-black;
+ }
+}

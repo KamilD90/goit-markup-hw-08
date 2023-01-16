@@ -24,7 +24,7 @@
             >Web<span class="logo__studio--black">Studio</span></a
           >
           <!------NAVIGATE BLOCK START ------->
-          <nav class="header__navigate hide">
+          <nav class="header__navigate">
             <ul class="header__navigate-list">
               <li>
                 <a
@@ -50,7 +50,7 @@
             </ul>
           </nav>
         </div>
-        <div class="header__contact hide">
+        <div class="header__contact">
           <a href="mailto:info@devstudio.com" class="header__contact-link">
             <svg width="16px" height="12px" class="header__contact-icon">
               <use href="images/icons.svg#icon-envelope"></use>
@@ -66,27 +66,18 @@
             +48 111 111 111</a
           >
         </div>
+
+        <!-- ---TOGGLE--NAVIGATE BUTTON------ -->
         <button
-          class="menu-toggle js-open-menu"
+          class="menu__toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg width="40px" height="40px" class="menu__toggle-icon">
+            <use href="images/icons.svg#icon-toggle"></use>
           </svg>
         </button>
       </div>
-      <!-- -----HEADER BLOCK END---- -->
     </header>
     <main>
       <!-- ----------HERO BLOCK START----------- -->
@@ -206,7 +197,7 @@
           <ul class="team__list">
             <li class="team__item">
               <figure class="team__card">
-                <picture>
+                <picture class="team__picture">
                   <source
                     media="screen and (max-width: 767px)"
                     srcset="
@@ -253,12 +244,24 @@
             </li>
             <li class="team__item">
               <figure class="team__card">
-                <img
-                  src="images/ourteam/frontend_developer.jpg"
-                  alt="blondynka w czarnej marynarce"
-                  width="270"
-                  height="260"
-                />
+                <picture class="team__picture">
+                  <source
+                    media="screen and (max-width: 767px)"
+                    srcset="
+                      images/ourteam/f-d-mob@1x.jpg,
+                      images/ourteam/f-d-mob@2x.jpg 2x
+                    "
+                  />
+                  <source media="screen and (min-width: 767px)"" srcset="
+                  images/ourteam/f-d-tab@1x.jpg, images/ourteam/f-d-tab@2x.jpg
+                  2x " /> <source media="screen and (min-width: 1200px)""
+                  srcset=" images/ourteam/f-d-desk@1x.jpg,
+                  images/ourteam/f-d-desk@2x.jpg 2x " />
+                  <img
+                    src="images/ourteam/frontend_developer.jpg"
+                    alt="blondynka w czarnej marynarce"
+                  />
+                </picture>
                 <figcaption class="team__member-ocupation">
                   <span class="team__member-name">John Doe </span>
                   Frontend Developer
@@ -288,14 +291,27 @@
             </li>
             <li class="team__item">
               <figure class="team__card">
-                <img
-                  src="images/ourteam/marketing.jpg"
-                  alt="mężczyzna w niebieskiej koszuli"
-                  width="270"
-                  height="260"
-                />
+                <picture class="team__picture">
+                  <source
+                    media="screen and (max-width: 767px)"
+                    srcset="
+                      images/ourteam/mk-mob@1x.jpg,
+                      images/ourteam/mk-mob@2x.jpg 2x
+                    "
+                  />
+                  <source media="screen and (min-width: 767px)"" srcset="
+                  images/ourteam/mk-tab@1x.jpg, images/ourteam/mk-tab@2x.jpg 2x
+                  " /> <source media="screen and (min-width: 1200px)"" srcset="
+                  images/ourteam/mk-desk@1x.jpg, images/ourteam/mk-desk@2x.jpg
+                  2x " />
+                  <img
+                    src="images/ourteam/marketing.jpg"
+                    alt="mężczyzna w niebieskiej koszuli"
+                  />
+                </picture>
                 <figcaption class="team__member-ocupation">
-                  <span class="team__member-name">John Doe </span> Marketing
+                  <span class="team__member-name">John Doe </span>
+                  Marketing
                 </figcaption>
               </figure>
               <div class="social-media team__social-media">
@@ -322,14 +338,27 @@
             </li>
             <li class="team__item">
               <figure class="team__card">
-                <img
-                  src="images/ourteam/ui_designer.jpg"
-                  alt="mężczyzna w czarnym T-shirt"
-                  width="270"
-                  height="260"
-                />
+                <picture class="team__picture">
+                  <source
+                    media="screen and (max-width: 767px)"
+                    srcset="
+                      images/ourteam/ui-d-mob@1x.jpg,
+                      images/ourteam/ui-d-mob@2x.jpg 2x
+                    "
+                  />
+                  <source media="screen and (min-width: 767px)"" srcset="
+                  images/ourteam/ui-d-tab@1x.jpg, images/ourteam/ui-d-tab@2x.jpg
+                  2x " /> <source media="screen and (min-width: 1200px)""
+                  srcset=" images/ourteam/ui-d-desk@1x.jpg,
+                  images/ourteam/ui-d-desk@2x.jpg 2x " />
+                  <img
+                    src="images/ourteam/ui_designer.jpg"
+                    alt="mężczyzna w czarnym T-shirt"
+                  />
+                </picture>
                 <figcaption class="team__member-ocupation">
-                  <span class="team__member-name">John Doe </span> UI Designer
+                  <span class="team__member-name">John Doe </span>
+                  UI Designer
                 </figcaption>
               </figure>
               <div class="social-media team__social-media">
@@ -397,32 +426,9 @@
         </div>
       </section>
     </main>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
-    </div>
-    <!-- /* ------------------------FOOTER PART----------------------- */ -->
-    <footer class="footer">
+    <!---------------F_O_O_T_E_R--------- -->
+    <footer class="footer section">
       <div class="container">
         <div class="footer__box">
           <a href="index.html" class="logo footer__logo"
@@ -450,8 +456,9 @@
             </ul>
           </address>
         </div>
+        <!-- -----FOOTER   SOCIAL MEDIA   BOX----- -->
         <div class="footer__sm-box">
-          <h3 class="footer__sm-box-title">DOŁĄCZ DO NAS</h3>
+          <h3 class="footer__sm-title">DOŁĄCZ DO NAS</h3>
           <div class="social-media footer__social-media-flex">
             <a
               class="social-media__link footer__social-media--background"
@@ -502,6 +509,7 @@
             </a>
           </div>
         </div>
+        <!------ ----N_E_W_S_L_E_T_T_E_R------ -->
         <div class="footer__newsletter">
           <h2 class="footer__newsletter-title">ZAPISZ SIĘ DO NEWSLETTERA</h2>
           <div class="footer__newsletter-wrapper">
@@ -521,11 +529,13 @@
         </div>
       </div>
     </footer>
+
+    <!-- -------------M_O_D_A_L------- -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-btn" data-modal-close>&times;</button>
+        <h2 class="modal__title">Zostaw swoje dane w formularzu poniżej</h2>
         <form class="form" name="contact-form" autocomplete="on">
-          <h2 class="form__title">Zostaw swoje dane w formularzu poniżej</h2>
           <label class="form__input-name" for="customer-name">Imie</label>
 
           <div class="form__input-container">
@@ -583,25 +593,28 @@
             <svg width="11px" height="8px" class="custom-checkbox__icon">
               <use href="images/icons.svg#icon-Vector"></use>
             </svg>
+
             <span class="custom-checkbox__conditions">
               Oświadczam iż akceptuję
-              <a class="custom-checkbox__link" href="#">Regulamin</a> i
+              <a class="custom-checkbox__link" href="#">Regulamin</a>
+              i
               <a class="custom-checkbox__link" href="#">
                 Politykę Prywatności.</a
               ></span
-            ></label
-          >
+            >
+          </label>
           <button class="form__submit-btn" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
