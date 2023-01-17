@@ -74,8 +74,12 @@
 }
 
 .filters__button {
-  padding: 6px 22px;
+  height: 38px;
+
   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
   color: $brand-almost-black;
   background-color: $brand-2nd-grey;
   font-weight: 500;
@@ -88,6 +92,42 @@
   transition-property: background-color, color, box-shadow;
   transition-duration: $transitionDurationDeafault;
   transition-timing-function: $tarnsitionTimingDefault;
+
+  &--resize1 {
+    width: 103px;
+
+    @include desktop {
+      width: 121px;
+    }
+  }
+  &--resize2 {
+    width: 128px;
+
+    @include desktop {
+      width: 93px;
+    }
+  }
+  &--resize3 {
+    width: 145px;
+
+    @include desktop {
+      width: 114px;
+    }
+  }
+  &--resize4 {
+    width: 103px;
+
+    @include desktop {
+      width: 91px;
+    }
+  }
+  &--resize5 {
+    width: 130px;
+
+    @include desktop {
+      width: 121px;
+    }
+  }
 
   &:hover,
   &:focus {

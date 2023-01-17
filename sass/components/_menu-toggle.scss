@@ -1,130 +1,124 @@
 .menu {
- position: fixed;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- z-index: -2;
- top: 0;
- left: 0;
- width: 100vw;
- height: 100vh;
- padding: 48px 40px;
- opacity: 0;
- background-color: $brand-white;
- transition-property: opacity;
- transition-duration: $transitionDurationDeafault;
- transition-timing-function: $tarnsitionTimingDefault;
-
- &.is-open {
-  z-index: 999;
-  opacity: 1;
- }
-
- &__toggle {
-  height: 40px;
-  width: 40px;
+  position: fixed;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  fill: $brand-black;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  opacity: 0;
   background-color: $brand-white;
+  transition-property: opacity;
+  transition-duration: $transitionDurationDeafault;
+  transition-timing-function: $tarnsitionTimingDefault;
 
-  &:hover .menu__toggle-icon,
-  &:focus .menu__toogle-icon {
-   fill: $brand-light-navy;
-  }
- }
-
- &__close {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  max-width: 40px;
-  max-height: 40px;
-  display: flex;
-  margin-left: auto;
-  outline: none;
-  background: none;
-  border: none;
-
-  &:hover .menu__close-icon,
-  &:focus .menu__close-icon {
-   fill: $brand-light-navy;
-   cursor: pointer;
-  }
- }
-
- &__navigate-link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  letter-spacing: 0.02em;
-  color: $brand-black;
-  text-decoration: none;
-
-  &--email {
-   font-size: 24px;
-   line-height: 28px;
-   letter-spacing: 0.02em;
+  &.is-open {
+    z-index: 999;
+    opacity: 1;
   }
 
-  &:hover,
-  &:focus {
-   color: $brand-light-navy;
-  }
- }
+  &__toggle {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    fill: $brand-black;
+    background-color: $brand-white;
 
- &__contact {
-  margin-bottom: 64px;
- }
-
- &__contact-link {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: $brand-light-grey;
-
-  &:first-child {
-   margin-bottom: 32px;
+    &:hover .menu__toggle-icon,
+    &:focus .menu__toogle-icon {
+      fill: $brand-light-navy;
+    }
   }
 
-  &--email {
-   font-size: 25px;
+  &__close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    max-width: 40px;
+    max-height: 40px;
+    display: flex;
+    margin-left: auto;
+    outline: none;
+    background: none;
+    border: none;
+
+    &:hover .menu__close-icon,
+    &:focus .menu__close-icon {
+      fill: $brand-light-navy;
+      cursor: pointer;
+    }
   }
 
-  &:hover,
-  &:focus {
-   color: $brand-light-navy;
-  }
- }
+  &__navigate-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: $brand-black;
+    text-decoration: none;
 
- &__socialmedia {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: flex-start;
-
-  &-list {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: flex-start;
+    &:hover,
+    &:focus {
+      color: $brand-light-navy;
+    }
   }
 
-  &-link {
-   text-decoration: none;
-   color: $brand-light-navy;
-   margin: 0 10px;
+  &__contact {
+    margin-bottom: 64px;
   }
- }
+
+  &__contact-link {
+    display: block;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $brand-light-grey;
+
+    &:first-child {
+      margin-bottom: 32px;
+    }
+
+    &--email {
+      font-size: 25px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $brand-light-navy;
+    }
+  }
+
+  &__socialmedia-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__socialmedia-item {
+    color: $brand-light-grey;
+  }
+
+  &__socialmedia-link {
+    text-decoration: none;
+    color: $brand-light-navy;
+    margin: 0 10px;
+  }
 }
+
 @media (min-width: 768px) {
- .menu__toggle {
-  display: none;
- }
+  .menu__toggle {
+    display: none;
+  }
 }

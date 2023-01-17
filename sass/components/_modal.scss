@@ -29,19 +29,5 @@
   border-radius: 4px;
   @include desktop {
     max-width: 528px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__title {
-    max-width: 350px;
-    margin: 40px 40px 12px;
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: $brand-almost-black;
-    letter-spacing: 0.03em;
   }
 }
