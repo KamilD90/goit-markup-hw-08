@@ -16,7 +16,8 @@
 }
 
 .modal {
-  max-width: 480px;
+  max-width: 450px;
+  min-height: 581px;
   position: relative;
   margin: 0 15px;
   transition-property: opacity;
@@ -27,8 +28,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   @include desktop {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
     display: flex;
     flex-direction: column;
   }
