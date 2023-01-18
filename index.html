@@ -157,33 +157,54 @@
           <h2 class="our-job__title">Czym się zajmujemy</h2>
           <ul class="our-job__list">
             <li class="our-job__item">
-              <img
-                src="images/ourwork/coding.jpg"
-                alt="ludzkie dłonie piszą kod źródłowy"
-                width="370"
-                height="294"
-                class="our-job__image"
-              />
+              <picture class="our-job__picture">
+                <source
+                  media="screen and (min-width: 1200px)"
+                  srcset="
+                    images/ourwork/a-k-desk@1x.jpg,
+                    images/ourteam/a-k-desk@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="images/ourwork/a-k-desk@1x.jpg"
+                  alt="mężczyzna w czarnym T-shirt"
+                  class="our-job__image"
+                />
+              </picture>
               <p class="our-job__image-name">aplikacje komputerowe</p>
             </li>
             <li class="our-job__item">
-              <img
-                src="images/ourwork/choose_ui.jpg"
-                alt="kobieta wybiera na laptopie UserInterface"
-                width="370"
-                height="294"
-                class="our-job__image"
-              />
+              <picture class="our-job__picture">
+                <source
+                  media="screen and (min-width: 1200px)"
+                  srcset="
+                    images/ourwork/a-m-desk@1x.jpg,
+                    images/ourteam/a-m-desk@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="images/ourwork/a-m-desk@1x.jpg"
+                  alt="mężczyzna w czarnym T-shirt"
+                  class="our-job__image"
+                />
+              </picture>
               <p class="our-job__image-name">aplikacje mobilne</p>
             </li>
             <li class="our-job__item">
-              <img
-                src="images/ourwork/palette.jpg"
-                alt="człowiek wybiera na tablecie kolor z dostępnej palety"
-                width="370"
-                height="294"
-                class="our-job__image"
-              />
+              <picture class="our-job__picture">
+                <source
+                  media="screen and (min-width: 1200px)"
+                  srcset="
+                    images/ourwork/r-g-desk@1x.jpg,
+                    images/ourteam/r-g-desk@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="images/ourwork/r-g-desk@1x.jpg"
+                  alt="mężczyzna w czarnym T-shirt"
+                  class="our-job__image"
+                />
+              </picture>
               <p class="our-job__image-name">rozwiazania graficzne</p>
             </li>
           </ul>
@@ -530,6 +551,56 @@
       </div>
     </footer>
 
+    <div class="menu js-menu-container is-open" id="mobile-menu">
+      <button class="menu__close js-close-menu">
+        <svg width="40px" height="40px" class="menu__close-icon">
+          <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <div class="menu__wrapper">
+        <ul class="menu__navigate">
+          <li>
+            <a href="index.html" class="menu__navigate-link">Agencja</a>
+          </li>
+          <li>
+            <a href="portfolio.html" class="menu__navigate-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#" class="menu__navigate-link">Kontakt</a>
+          </li>
+        </ul>
+        <div>
+          <div class="menu__contact">
+            <a href="tel:+48111111111" class="menu__contact-link">
+              +48 111 111 111</a
+            >
+            <a
+              href="mailto:info@devstudio.com"
+              class="menu__contact-link menu__contact-link--email"
+            >
+              info@devstudio.com</a
+            >
+          </div>
+          <ul class="menu__socialmedia-list">
+            <li class="menu__socialmedia-item">
+              <a href="#" class="menu__socialmedia-link">Instagram</a>&#8739;
+            </li>
+            <li class="menu__socialmedia-item">
+              <a href="#" class="menu__socialmedia-link">Twitter</a>&#8739;
+            </li>
+            <li class="menu__socialmedia-item">
+              <a href="#" class="menu__socialmedia-link">Facebook</a>&#8739;
+            </li>
+            <li class="menu__socialmedia-item">
+              <a href="#" class="menu__socialmedia-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="./js/mobile-menu.js"></script>
+
     <!-- -------------M_O_D_A_L------- -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -608,57 +679,6 @@
       </div>
     </div>
 
-    <div class="menu js-menu-container is-open" id="mobile-menu">
-      <button class="menu__close js-close-menu">
-        <svg width="40px" height="40px" class="menu__close-icon">
-          <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
-        </svg>
-      </button>
-      <ul>
-        <li>
-          <a href="index.html" class="menu__navigate-link">Agencja</a>
-        </li>
-        <li>
-          <a href="portfolio.html" class="menu__navigate-link">Portfolio</a>
-        </li>
-        <li>
-          <a href="#" class="menu__navigate-link">Kontakt</a>
-        </li>
-      </ul>
-      <div class="menu__contact">
-        <a href="tel:+48111111111" class="menu__contact-link">
-          +48 111 111 111</a
-        >
-        <a
-          href="mailto:info@devstudio.com"
-          class="menu__contact-link menu__contact-link--email"
-        >
-          info@devstudio.com</a
-        >
-      </div>
-      <ul class="menu__socialmedia-list">
-        <li class="menu__socialmedia-item">
-          <a href="#" class="menu__socialmedia-link">Instagram</a>&#8739;
-        </li>
-        <li class="menu__socialmedia-item">
-          <a href="#" class="menu__socialmedia-link">Twitter</a>&#8739;
-        </li>
-        <li class="menu__socialmedia-item">
-          <a href="#" class="menu__socialmedia-link">Facebook</a>&#8739;
-        </li>
-        <li class="menu__socialmedia-item">
-          <a href="#" class="menu__socialmedia-link">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
-
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
