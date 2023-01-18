@@ -1,12 +1,16 @@
 .footer {
   background-color: $brand-light-black;
 
-  & .container {
+  &__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @include desktop {
+
+    @include tablet {
       flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 
@@ -14,8 +18,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablet {
+      margin-left: 61px;
+      margin-right: 144px;
+    }
+
     @include desktop {
       margin-right: 70px;
+      margin-left: 0px;
       align-items: flex-start;
     }
   }
@@ -40,7 +51,7 @@
     align-items: center;
 
     @include desktop {
-      justify-content: space-between;
+      align-items: flex-start;
       gap: 3.5px;
     }
   }
@@ -76,17 +87,24 @@
   }
   // ---------DOŁĄCZ DO NAS ----------
   &__sm-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    text-align: center;
     margin-bottom: 60px;
+
+    @include tablet {
+      margin-right: 74px;
+    }
 
     @include desktop {
       flex-direction: column;
+      margin-bottom: 40px;
       margin-top: 12px;
       margin-right: 78px;
     }
   }
+
   &__sm-title {
     color: $brand-white;
     font-size: 14px;
@@ -95,11 +113,13 @@
     margin-bottom: 20px;
 
     @include desktop {
+      text-align: left;
       vertical-align: top;
       letter-spacing: 3%;
       margin-bottom: 20px;
     }
   }
+
   &__social-media-flex {
     justify-content: center;
     gap: 10px;
@@ -130,12 +150,20 @@
     text-transform: uppercase;
     color: $brand-white;
     margin-bottom: 20px;
+
+    @include desktop {
+      text-align: left;
+    }
   }
 
   &__newsletter-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include desktop {
+      flex-direction: row;
+    }
   }
 
   &__newsletter-input {
@@ -166,9 +194,14 @@
       outline-color: $brand-light-navy;
     }
 
+    @include tablet {
+      width: 450px;
+    }
+
     @include desktop {
       margin-right: 12px;
       margin-bottom: 0;
+      width: 358px;
     }
   }
 

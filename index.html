@@ -21,7 +21,7 @@
       <div class="container header__flex-box">
         <div class="header__wrapper">
           <a href="index.html" class="logo header__logo"
-            >Web<span class="logo__studio--black">Studio</span></a
+            >Web<span class="logo logo__studio--black">Studio</span></a
           >
           <!------NAVIGATE BLOCK START ------->
           <nav class="header__navigate">
@@ -426,57 +426,10 @@
         </div>
       </section>
     </main>
-    <div class="menu js-menu-container is-open" id="mobile-menu">
-      <button class="menu__close js-close-menu">
-        <svg width="40px" height="40px" class="menu__close-icon">
-          <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
-        </svg>
-      </button>
-        <ul>
-          <li>
-            <a
-              href="index.html"
-              class="menu__navigate-link"
-              >Agencja</a
-            >
-          </li>
-          <li>
-            <a
-              href="portfolio.html"
-              class="menu__navigate-link"
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="menu__navigate-link"
-              >Kontakt</a
-            >
-          </li>
-        </ul>
-        <div class="menu__contact">
-          <a href="tel:+48111111111" class="menu__contact-link">
-            +48 111 111 111</a
-            >
-          <a href="mailto:info@devstudio.com" class="menu__contact-link menu__contact-link--email">
-            info@devstudio.com</a
-          >
-          
-        </div>
-        <ul class="menu__socialmedia-list">
-          <li class="menu__socialmedia-item"><a href="#" class="menu__socialmedia-link">Instagram</a>&#8739;</li>
-          <li class="menu__socialmedia-item"><a href="#" class="menu__socialmedia-link">Twitter</a>&#8739;</li>
-          <li class="menu__socialmedia-item"><a href="#" class="menu__socialmedia-link">Facebook</a>&#8739;</li>
-          <li class="menu__socialmedia-item"><a href="#" class="menu__socialmedia-link">LinkedIn</a></li>
-        </ul>
-    </div>
-   
 
-    </div>
     <!---------------F_O_O_T_E_R--------- -->
-    <footer class="footer section">
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer__wrapper">
         <div class="footer__box">
           <a href="index.html" class="logo footer__logo"
             >Web<span class="logo__studio--white">Studio</span></a
@@ -581,8 +534,9 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-btn" data-modal-close>&times;</button>
-        <h2 class="modal__title">Zostaw swoje dane w formularzu poniżej</h2>
+
         <form class="form" name="contact-form" autocomplete="on">
+          <h2 class="form__title">Zostaw swoje dane w formularzu poniżej</h2>
           <label class="form__input-name" for="customer-name">Imie</label>
 
           <div class="form__input-container">
@@ -654,6 +608,51 @@
       </div>
     </div>
 
+    <div class="menu js-menu-container is-open" id="mobile-menu">
+      <button class="menu__close js-close-menu">
+        <svg width="40px" height="40px" class="menu__close-icon">
+          <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <ul>
+        <li>
+          <a href="index.html" class="menu__navigate-link">Agencja</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="menu__navigate-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#" class="menu__navigate-link">Kontakt</a>
+        </li>
+      </ul>
+      <div class="menu__contact">
+        <a href="tel:+48111111111" class="menu__contact-link">
+          +48 111 111 111</a
+        >
+        <a
+          href="mailto:info@devstudio.com"
+          class="menu__contact-link menu__contact-link--email"
+        >
+          info@devstudio.com</a
+        >
+      </div>
+      <ul class="menu__socialmedia-list">
+        <li class="menu__socialmedia-item">
+          <a href="#" class="menu__socialmedia-link">Instagram</a>&#8739;
+        </li>
+        <li class="menu__socialmedia-item">
+          <a href="#" class="menu__socialmedia-link">Twitter</a>&#8739;
+        </li>
+        <li class="menu__socialmedia-item">
+          <a href="#" class="menu__socialmedia-link">Facebook</a>&#8739;
+        </li>
+        <li class="menu__socialmedia-item">
+          <a href="#" class="menu__socialmedia-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/modal.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -661,6 +660,5 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
   </body>
 </html>

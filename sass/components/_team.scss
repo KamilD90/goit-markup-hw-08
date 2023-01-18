@@ -1,5 +1,12 @@
 .team {
   background-color: $brand-2nd-grey;
+  @include tablet {
+    margin-top: -15px;
+  }
+
+  @include desktop {
+    margin-top: 0px;
+  }
 
   &__title {
     margin-bottom: 30px;
@@ -22,8 +29,12 @@
     flex-direction: column;
     gap: 30px;
 
-    @include desktop {
+    @include tablet {
       flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @include desktop {
       justify-content: space-between;
     }
   }
@@ -38,6 +49,15 @@
 
   &__card {
     margin-bottom: 1rem;
+
+    @include tablet {
+      margin-bottom: 30px;
+      width: 354px;
+    }
+
+    @include desktop {
+      width: 270px;
+    }
   }
 
   &__picture {

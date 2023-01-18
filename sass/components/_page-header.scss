@@ -40,7 +40,11 @@
 
   &__navigate-list {
     display: flex;
-    gap: 46px;
+    gap: 60px;
+
+    @include desktop {
+      gap: 46px;
+    }
   }
 
   &__navigate-link {
@@ -71,8 +75,11 @@
       height: 4px;
       width: 100%;
       position: absolute;
-      bottom: -32px;
       border-radius: 2px;
+      bottom: -34px;
+      @include desktop {
+        bottom: -32px;
+      }
     }
 
     &--unactive::after {
@@ -82,12 +89,16 @@
       background-color: $brand-light-navy;
       height: 4px;
       width: 100%;
+      bottom: -34px;
       position: absolute;
-      bottom: -32px;
       border-radius: 2px;
       transition-property: opacity;
       transition-duration: $transitionDurationDeafault;
       transition-timing-function: $tarnsitionTimingDefault;
+
+      @include desktop {
+        bottom: -32px;
+      }
     }
 
     &--unactive:hover::after,
@@ -101,6 +112,12 @@
 
     @include tablet {
       display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @include desktop {
+      flex-direction: row;
       align-items: center;
       gap: 30px;
       margin-right: 12px;
@@ -126,6 +143,10 @@
     }
   }
   &__contact-icon {
-    margin-right: 10px;
+    margin-right: 8px;
+
+    @include desktop {
+      margin-right: 10px;
+    }
   }
 }

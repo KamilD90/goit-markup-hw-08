@@ -54,6 +54,11 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: $brand-light-navy;
+  }
 }
 
 .form__submit-btn {

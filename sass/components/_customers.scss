@@ -21,6 +21,10 @@
     justify-content: center;
     column-gap: 6.25%;
     gap: 30px;
+
+    @include tablet {
+      column-gap: 30px;
+    }
   }
 
   &__link {
@@ -43,12 +47,16 @@
       border-color: $brand-light-navy;
       outline: none;
       fill: $brand-light-navy;
+    }
+    @include tablet {
+      max-width: 226px;
+    }
 
-      @include desktop {
-        align-items: center;
-        justify-content: center;
-        padding: 13px 29px;
-      }
+    @include desktop {
+      width: 170px;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 29px;
     }
   }
 }
