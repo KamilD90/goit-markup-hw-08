@@ -29,7 +29,9 @@
 
   &__link {
     display: flex;
-    width: 43%;
+    width: 210px;
+
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 13px 0;
