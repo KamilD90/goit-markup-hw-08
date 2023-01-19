@@ -703,6 +703,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .article__title {
+    text-align: left;
+  }
+}
 .article__description {
   font-size: 14px;
   color: #757575;
